@@ -12,7 +12,7 @@ _LOOKUP_ENC = {}
 _LOOKUP_DEC = {}
 
 
-def _build_lookup():
+def build_lookup():
     for i, s in enumerate(PAIR_STR):
         match = list(re.findall("..", s))
         encode_repertoire = [chr(cp) for pair in match for cp in range(ord(pair[0]), ord(pair[1]) + 1)]
@@ -23,10 +23,12 @@ def _build_lookup():
             _LOOKUP_DEC[c] = (num_z_bits, z)
 
 
-_build_lookup()
-
-
 def encode(bytes_: bytes) -> str:
+    """
+    Encodes a bytes object into a Base32768 string.
+    :param bytes_: a bytes object
+    :return: the encoded Base32768 string
+    """
     if type(bytes_) is not bytes:
         raise TypeError('Argument must be bytes')
 
@@ -58,6 +60,11 @@ def encode(bytes_: bytes) -> str:
 
 
 def decode(s: str) -> bytes:
+    """
+    Decodes a Base32768 string into a bytes object.
+    :param s: a Base32768 string
+    :return:  the decoded bytes object
+    """
     if type(s) is not str:
         raise TypeError('Argument must be str')
 
