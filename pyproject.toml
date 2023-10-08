@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybase32k"
+version = "1.0.0"
+authors = [
+  { name="BlackoutRoulette", email="blackoutroulette@live.de" },
+]
+description = "A binary encoding optimised for UTF-16-encoded text."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/blackoutroulette/PyBase32k"
+"Bug Tracker" = "https://github.com/blackoutroulette/PyBase32k/issues"

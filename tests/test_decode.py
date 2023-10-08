@@ -1,6 +1,6 @@
 import pytest
 
-from src.base32768 import decode
+from src.pybase32k import decode
 
 
 @pytest.mark.parametrize('expected, s', [

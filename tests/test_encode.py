@@ -1,6 +1,6 @@
 import pytest
 
-from src.base32768 import encode
+from src.pybase32k import encode
 
 
 @pytest.mark.parametrize('b, expected', [

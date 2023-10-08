@@ -1,4 +1,4 @@
-from src.base32768 import _LOOKUP_ENC, _LOOKUP_DEC
+from src.pybase32k.pybase32k import _LOOKUP_ENC, _LOOKUP_DEC
 
 
 def test_lookup_size():

@@ -1,6 +1,6 @@
 import pytest
 
-from src.base32768 import decode, encode
+from src.pybase32k import decode, encode
 
 
 @pytest.mark.parametrize('s', [
